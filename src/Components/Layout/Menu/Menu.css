@@ -1,0 +1,21 @@
+.Menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+   padding-top: 30px;
+}
+
+.Menu>* {
+    margin: 10px;
+}
+
+.Menu a {
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.Menu a:hover {
+    font-weight: 700;
+    text-decoration: underline;
+}
