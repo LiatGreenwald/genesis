@@ -17,7 +17,7 @@ const Header: React.FC<HeaderProps> = ({ onSearch }) => {
   return (
     <header className="Header">
       <div className="Header-container">
-       <img src={GenesisLogo}/>
+       {/* <img src={GenesisLogo}/> */}
             <nav className="Header-nav">
           <Link to="/movies" className="Header-link">
             Movies
