@@ -42,22 +42,22 @@ export const {
     deletedMovieAction,
   } = moviesSlice.actions;
 
-  const moviesReducer = moviesSlice.reducer;
+  export const moviesReducer = moviesSlice.reducer;
 
-  import { Notyf } from "notyf";
+//   import { Notyf } from "notyf";
 
-class NotificationService{
+// class NotificationService{
 
-    private notification = new Notyf({duration:4000, position:{x:"left",y:"top"}});
+//     private notification = new Notyf({duration:4000, position:{x:"left",y:"top"}});
 
-    public success(message: string) {
-        this.notification.success(message);
-    }
+//     public success(message: string) {
+//         this.notification.success(message);
+//     }
 
-    public error(message: string) {
-        this.notification.error(message);
-    }
-}
+//     public error(message: string) {
+//         this.notification.error(message);
+//     }
+// }
 
-const notifyService = new NotificationService();
-export default notifyService;
+// const notifyService = new NotificationService();
+// export default notifyService;

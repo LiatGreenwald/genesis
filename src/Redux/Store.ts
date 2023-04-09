@@ -1,11 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
-
+import { moviesReducer } from '../Redux/MovieAppState';
 
 
 
 
 const rootReducer = {
-    // countryReducer: countryReducer,
+    moviesReducer: moviesReducer,
     
 };
 
