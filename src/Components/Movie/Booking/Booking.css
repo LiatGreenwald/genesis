@@ -1,88 +1,176 @@
-:root {
-    --primary-color: #aaaaaa;
-    --secondary-color: #ff1500d2;
-    --background-color: #000000;
-  
-    --font-small: 10px;
-    --font-medium: 22px;
-    --font-large: 36px;
-  }
-  
-  .booking-container {
+/* 
+
+   .booking-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: var(--primary-color);
-    background-color: var(--background-color);
-    font-family: 'Arial', sans-serif;
-    padding: 20px;
-    transition: all 0.3s ease;
+    font-family: Arial, sans-serif;
   }
   
-  .booking-container.light-mode {
-    color: var(--background-color);
-    background-color: var(--primary-color);
+  .screening-time-container {
+    margin-bottom: 20px;
   }
   
-  .booking-title {
-    font-size: var(--font-large);
+  .label {
     font-weight: bold;
-    margin-bottom: 20px;
   }
   
-  .screening-time-select {
-    font-size: var(--font-medium);
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    margin-bottom: 20px;
+  .select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
   }
   
-  .seat-map {
-    display: grid;
-    grid-template-columns: repeat(5, 50px);
-    grid-template-rows: repeat(6, 50px);
-    gap: 10px;
+  .seat-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-bottom: 20px;
   }
   
   .seat {
-    background-color: var(--primary-color);
-    border: 2px solid var(--secondary-color);
-    color: var(--secondary-color);
+    background-color: #eee;
+    border-radius: 4px;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    font-size: 16px;
     font-weight: bold;
+    margin: 5px;
+    padding: 10px;
+    width: 80px;
+    height: 40px;
+    text-align: center;
+  }
+  
+  .selected {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .price-container {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .buy-now-button {
+    background-color: #333;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+  }
+  
+  .buy-now-button:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+   */
+
+   .booking-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #f7f7f7;
+  }
+  
+  h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .row {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .date-picker-container {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .screening-time-container {
+    flex: 1;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+  
+  select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    appearance: none;
+    background-color: #fff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23888888' d='M18.3 7.7L12 14l-6.3-6.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l7 7c.2.2.5.3.7.3s.5-.1.7-.3l7-7c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0z'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .seat-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .seat {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    background-color: #fff;
+    color: #333;
     cursor: pointer;
   }
   
   .seat.selected {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+    background-color: #ffa07a;
+    color: #fff;
   }
   
-  .total-price {
-    font-size: var(--font-medium);
-    font-weight: bold;
+  .price-container {
+    font-size: 24px;
     margin-bottom: 20px;
   }
   
-  .buy-button {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    border: none;
-    border-radius: 5px;
+  .buy-now-button {
+    display: block;
+    width: 100%;
     padding: 10px;
-    font-size: var(--font-medium);
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
     cursor: pointer;
-    transition: all 0.3s ease;
   }
   
-  .buy-button:hover {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+  .buy-now-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
   }
-  
+   
