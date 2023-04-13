@@ -31,6 +31,7 @@ function MovieList(): JSX.Element {
 
     return (
         <div className="MovieList">
+          
 		  <span>Filter by title: </span>
        <input type="text" onChange={handleChange} />
 			<div className="cards-display">

@@ -16,7 +16,7 @@ function Routing(): JSX.Element {
                 <Route path="movie" element={<MovieList/>}/>
                 {/* <Route path="about" element={<About/>}/> */}
                 <Route path="*" element={<Page404/>} />
-                <Route path="booking" element={<Booking/>}/>
+                <Route path="booking" element={<Booking movieTitle={""}/>}/>
                 </Routes>	
         </div>
     );

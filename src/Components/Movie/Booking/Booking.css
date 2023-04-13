@@ -1,3 +1,88 @@
-.Booking {
-	
-}
+:root {
+    --primary-color: #aaaaaa;
+    --secondary-color: #ff1500d2;
+    --background-color: #000000;
+  
+    --font-small: 10px;
+    --font-medium: 22px;
+    --font-large: 36px;
+  }
+  
+  .booking-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--primary-color);
+    background-color: var(--background-color);
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .booking-container.light-mode {
+    color: var(--background-color);
+    background-color: var(--primary-color);
+  }
+  
+  .booking-title {
+    font-size: var(--font-large);
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .screening-time-select {
+    font-size: var(--font-medium);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .seat-map {
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+    grid-template-rows: repeat(6, 50px);
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .seat {
+    background-color: var(--primary-color);
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .seat.selected {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
+  
+  .total-price {
+    font-size: var(--font-medium);
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .buy-button {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: var(--font-medium);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .buy-button:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+  }
+  

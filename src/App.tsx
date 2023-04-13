@@ -9,9 +9,7 @@ import Footer from './Components/Layout/Footer/Footer';
 function App() {
   return (
     <div className="App">
-           <Header onSearch={function (query: string): void {
-        throw new Error('Function not implemented.');
-      } } />
+           <Header />
       <Menu />
       <Main/>
       <Footer />
